@@ -1,0 +1,51 @@
+{
+  "name": "angular-momentum",
+  "version": "0.0.2",
+  "description": "Instant binding between server and connected clients angular module",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm prune",
+    "pretest": "npm install",
+    "test": "karma start && istanbul cover ./node_modules/jasmine/bin/jasmine.js",
+    "preexample": "npm install",
+    "example": "node ./example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylekatarnls/angular-momentum.git"
+  },
+  "keywords": [
+    "instant",
+    "binding",
+    "ajax",
+    "real-time"
+  ],
+  "author": "kylekatarnls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylekatarnls/angular-momentum/issues"
+  },
+  "homepage": "https://github.com/kylekatarnls/angular-momentum#readme",
+  "engines": {
+    "node": ">=7"
+  },
+  "engineStrict": true,
+  "dependencies": {
+    "momentum": "^0.0.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.1",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-express-http-server": "0.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "opn": "^4.0.2",
+    "sinon": "^1.17.7"
+  }
+}
